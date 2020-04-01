@@ -142,5 +142,6 @@ module.exports = {
                 icon: 'content/assets/icon.png',
             },
         },
+        `gatsby-plugin-netlify`,
     ],
 };
