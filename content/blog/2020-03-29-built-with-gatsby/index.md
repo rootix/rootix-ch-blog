@@ -19,6 +19,6 @@ Despite knowing that I settled for a clean and simple layout, I'm very pleased a
 
 ![Lighthouse Score](media/lighthouse.png 'Lighthouse Score for rootix.ch')
 
-This is the first time I used a static site generator myself and I'm very happy with the stack choise for this blog. I know that if I wanted to have a Wordpress blog this fast, I would have to cache the hell out of it to get where it is now. Beside having a blog, i learned new tools already in the process.
+This is the first time I used a static site generator myself and I'm very happy with the stack choice for this blog. I know that if I wanted to have a Wordpress blog this fast, I would have to cache the hell out of it to get where it is now. Beside having a blog, i learned new tools already in the process.
 
 Thank you Scott!
