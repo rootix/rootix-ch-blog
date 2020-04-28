@@ -83,9 +83,9 @@ class Footer extends React.Component {
                         </a>
                     </div>
                     <span className="flex justify-center">
-                        © {new Date().getFullYear()} Pascal Mathys, Built with
+                        © {new Date().getFullYear()} Pascal Mathys &ndash;
                         &nbsp;
-                        <a href="https://www.gatsbyjs.org">Gatsby</a>
+                        <a href="/imprint-and-privacy">Imprint &amp; Privacy</a>
                     </span>
                 </footer>
             </>

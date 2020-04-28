@@ -4,7 +4,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-class BlogIndex extends React.Component {
+class PostListTemplate extends React.Component {
     render() {
         const { data } = this.props;
         const posts = data.allMarkdownRemark.edges;
@@ -69,7 +69,7 @@ class BlogIndex extends React.Component {
     }
 }
 
-export default BlogIndex;
+export default PostListTemplate;
 
 export const pageQuery = graphql`
     query pageListQuery($skip: Int!, $limit: Int!) {
@@ -80,6 +80,7 @@ export const pageQuery = graphql`
         }
         allMarkdownRemark(
             sort: { fields: [frontmatter___date], order: DESC }
+            filter: { frontmatter: { template: { eq: "post" } } }
             limit: $limit
             skip: $skip
         ) {

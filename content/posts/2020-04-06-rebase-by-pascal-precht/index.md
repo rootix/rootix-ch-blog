@@ -2,6 +2,7 @@
 title: REBASE by Pascal Precht
 date: '2020-04-06 14:00:00 +0200'
 tags: ['Git', 'Review']
+template: 'post'
 ---
 
 In December Pascal Precht announced his upcoming book [«REBASE - The complete Guide on Rebasing in Git»](https://rebase-book.com/). I know Pascal from his company Thoughtram, which gave an Angular On-Site Training in my Company last year. Since I know they also offer a Git master class, I see Pascal as a capable guy telling me things about Git, I don't know yet.

@@ -3,6 +3,7 @@ title: Built with Gatsby
 date: '2020-03-29 15:00:00 +0200'
 description: 'In the last couple of years, my website only consisted of links to my profiles on the internet. I blogged in the beginning of my twenties mostly about myself and not about what I do (as we all did in our first post on Twitter and Facebook in the old days).'
 tags: ['Blog']
+template: 'post'
 ---
 
 In the last couple of years, my website only consisted of links to my profiles on the internet. I blogged in the beginning of my twenties mostly about myself and not about what I do (as we all did in our first post on Twitter and Facebook in the old days).

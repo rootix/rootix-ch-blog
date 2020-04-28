@@ -6,7 +6,7 @@ import Bio from '../components/bio';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-class BlogPostTemplate extends React.Component {
+class PostTemplate extends React.Component {
     render() {
         const post = this.props.data.markdownRemark;
         const { previous, next } = this.props.pageContext;
@@ -71,7 +71,7 @@ class BlogPostTemplate extends React.Component {
     }
 }
 
-export default BlogPostTemplate;
+export default PostTemplate;
 
 export const pageQuery = graphql`
     query BlogPostBySlug($slug: String!) {

@@ -6,8 +6,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-// Components
-const Tags = ({ pageContext, data }) => {
+const TagsTemplate = ({ pageContext, data }) => {
     const { tag, currentPage, numPages } = pageContext;
     const { edges } = data.allMarkdownRemark;
     const isFirst = currentPage === 1;
@@ -76,7 +75,7 @@ const Tags = ({ pageContext, data }) => {
     );
 };
 
-Tags.propTypes = {
+TagsTemplate.propTypes = {
     pageContext: PropTypes.shape({
         tag: PropTypes.string.isRequired,
     }),
@@ -101,13 +100,15 @@ Tags.propTypes = {
     }),
 };
 
-export default Tags;
+export default TagsTemplate;
 
 export const pageQuery = graphql`
     query($tag: String, $skip: Int!, $limit: Int!) {
         allMarkdownRemark(
             sort: { fields: [frontmatter___date], order: DESC }
-            filter: { frontmatter: { tags: { in: [$tag] } } }
+            filter: {
+                frontmatter: { tags: { in: [$tag] }, template: { eq: "post" } }
+            }
             limit: $limit
             skip: $skip
         ) {
