@@ -51,10 +51,9 @@ module.exports = {
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         {
-            resolve: `gatsby-plugin-google-analytics`,
+            resolve: `gatsby-plugin-plausible`,
             options: {
-                trackingId: `UA-1955224-4`,
-                anonymize: true,
+                domain: `rootix.ch`,
             },
         },
         {
