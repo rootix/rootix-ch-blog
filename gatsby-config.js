@@ -148,6 +148,14 @@ module.exports = {
                 icon: 'content/assets/icon.png',
             },
         },
+        {
+            resolve: `gatsby-plugin-purgecss`,
+            options: {
+                printRejected: true,
+                tailwind: true,
+                develop: true,
+            },
+        },
         `gatsby-plugin-netlify`,
     ],
 };
