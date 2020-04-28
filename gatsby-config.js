@@ -154,6 +154,7 @@ module.exports = {
                 printRejected: true,
                 tailwind: true,
                 develop: true,
+                ignore: ['styles/prism-nord.css'],
             },
         },
         `gatsby-plugin-netlify`,
